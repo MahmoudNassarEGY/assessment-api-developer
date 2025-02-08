@@ -29,25 +29,6 @@ namespace assessment_platform_developer.Controllers
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
 
-            // Ensure the ID is not set by the client, let the model auto-generate it
-            customer = new Customer
-            {
-                Name = customer.Name,
-                Address = customer.Address,
-                Email = customer.Email,
-                Phone = customer.Phone,
-                City = customer.City,
-                State = customer.State,
-                Country = customer.Country,
-                Zip = customer.Zip,
-                Notes = customer.Notes,
-                ContactName = customer.ContactName,
-                ContactPhone = customer.ContactPhone,
-                ContactEmail = customer.ContactEmail,
-                ContactTitle = customer.ContactTitle,
-                ContactNotes = customer.ContactNotes
-            };
-
             // Validate ZIP code format based on country
             var validator = new ZipCodeValidator();
             if (!validator.IsValid(customer.Zip, customer.Country))
