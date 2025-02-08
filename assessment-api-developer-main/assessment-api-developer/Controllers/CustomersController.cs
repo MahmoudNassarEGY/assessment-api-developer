@@ -6,12 +6,13 @@ using System.Collections.Generic;
 using System.Net;
 using System.Web.Http;
 using Swashbuckle.Swagger.Annotations;
+using assessment_platform_developer.DTO;
 
 namespace assessment_platform_developer.Controllers
 {
     [RoutePrefix("api/customers")]
     public class CustomersController : ApiController
-    {
+    {   
         private readonly ICustomerService _customerService;
 
         public CustomersController(ICustomerService customerService)
@@ -25,8 +26,26 @@ namespace assessment_platform_developer.Controllers
         [SwaggerOperation("CreateCustomer")]
         [SwaggerResponse(HttpStatusCode.Created, Type = typeof(Customer), Description = "Customer created successfully")]
         [SwaggerResponse(HttpStatusCode.BadRequest, Description = "Invalid request data")]
-        public IHttpActionResult Create([FromBody] Customer customer)
+        public IHttpActionResult Create([FromBody] CustomerDTO customerDTO)
         {
+            var customer = new Customer
+            {
+                // Using DTO to exclude Id from update operation and for better SOLID adherance
+                Name = customerDTO.Name,
+                Address = customerDTO.Address,
+                Email = customerDTO.Email,
+                Phone = customerDTO.Phone,
+                City = customerDTO.City,
+                State = customerDTO.State,
+                Country = customerDTO.Country,
+                Zip = customerDTO.Zip,
+                Notes = customerDTO.Notes,
+                ContactName = customerDTO.ContactName,
+                ContactPhone = customerDTO.ContactPhone,
+                ContactEmail = customerDTO.ContactEmail,
+                ContactTitle = customerDTO.ContactTitle,
+                ContactNotes = customerDTO.ContactNotes
+            };
             if (!ModelState.IsValid) return BadRequest(ModelState);
 
             // Validate ZIP code format based on country
@@ -78,9 +97,8 @@ namespace assessment_platform_developer.Controllers
         [SwaggerResponse(HttpStatusCode.NotFound, Description = "Customer not found")]
         public IHttpActionResult Update(int id, [FromBody] Customer customer)
         {
-            if (id != customer.ID)
-                return BadRequest("Customer ID mismatch.");
-
+            
+            customer.ID = id;
             if (!ModelState.IsValid) return BadRequest(ModelState);
 
             var existingCustomer = _customerService.GetCustomer(id);
