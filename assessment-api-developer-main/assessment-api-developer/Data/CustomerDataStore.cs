@@ -13,8 +13,17 @@ namespace assessment_platform_developer.Data
 
         public Customer Get(int id) => customers.FirstOrDefault(c => c.ID == id);
 
-        public void Add(Customer customer) => customers.Add(customer);
 
+        public void Add(Customer customer)
+        {
+            var id = 1;
+            if (customers.Any())
+            {
+                id = customers.Max(a => a.ID) + 1;
+            }
+            customer.ID = id;
+            customers.Add(customer);
+        }
         public void Update(Customer customer)
         {
             var existingCustomer = customers.FirstOrDefault(c => c.ID == customer.ID);

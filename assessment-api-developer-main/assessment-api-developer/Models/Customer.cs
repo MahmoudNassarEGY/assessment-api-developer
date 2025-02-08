@@ -5,7 +5,8 @@ using System.ComponentModel.DataAnnotations;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
-using assessment_platform_developer.Validation; 
+using assessment_platform_developer.Validation;
+using Newtonsoft.Json;
 
 namespace assessment_platform_developer.Models
 {
@@ -92,15 +93,16 @@ namespace assessment_platform_developer.Models
     [Serializable]
     public class Customer
     {
-        private static int _nextId = 1; //  Added auto-incrementing ID
+       // private static int _nextID = 1; //  Added auto-incrementing ID
 
         public Customer()
         {
-            Id = _nextId++; //  Assigns unique ID on creation
+          //  ID = _nextID++; //  Assigns unique ID on creation
         }
 
         [Key]
-        public int Id { get; private set; }  // ID is now auto-generated
+        public int ID { get;  set; }  // ID is now auto-generated
+
 
         [Required, StringLength(100)]
         public string Name { get; set; }
