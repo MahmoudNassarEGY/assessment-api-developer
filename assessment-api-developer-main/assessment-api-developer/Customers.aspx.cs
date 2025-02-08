@@ -24,18 +24,33 @@ namespace assessment_platform_developer
         {
             if (!IsPostBack)
             {
-                var testContainer = (Container)HttpContext.Current.Application["DIContainer"];
-                var customerService = testContainer.GetInstance<ICustomerService>();
-                customers = customerService.GetAllCustomers().ToList();
+                LoadCustomers();
                 PopulateCustomerDropDownLists();
-                PopulateCustomerListBox();
+                RefreshTimer.Enabled = true;
             }
         }
+        protected void RefreshTimer_Tick(object sender, EventArgs e)
+        {
+            if (CustomersDDL.SelectedIndex <= 0) // Only refresh if not editing
+            {
+                LoadCustomers();
+                UpdatePanel1.Update();
+            }
+        }
+        private void LoadCustomers()
+        {
+            var testContainer = (Container)HttpContext.Current.Application["DIContainer"];
+            var customerService = testContainer.GetInstance<ICustomerService>();
+            customers = customerService.GetAllCustomers().ToList();
+            PopulateCustomerListBox();
+        }
+
+
         // Ensures 'Add new customer' is always an option in the dropdown
         private void PopulateCustomerListBox()
         {
             CustomersDDL.Items.Clear();
-            CustomersDDL.Items.Add(new ListItem("Add new customer"));
+            CustomersDDL.Items.Add(new ListItem("Add new customer", ""));
 
             if (customers.Any())
             {
@@ -47,6 +62,8 @@ namespace assessment_platform_developer
         // Handles dropdown selection changes to populate form fields dynamically
         protected void CustomersDDL_SelectedIndexChanged(object sender, EventArgs e)
         {
+            RefreshTimer.Enabled = (CustomersDDL.SelectedIndex <= 0);
+
             if (CustomersDDL.SelectedIndex > 0)
             {
                 var customerId = int.Parse(CustomersDDL.SelectedValue);
@@ -73,14 +90,13 @@ namespace assessment_platform_developer
         {
             if (Page.IsValid)
             {
-                var newCustomer = CreateCustomerFromForm();
                 var testContainer = (Container)HttpContext.Current.Application["DIContainer"];
                 var customerService = testContainer.GetInstance<ICustomerService>();
-                customerService.AddCustomer(newCustomer);
+                customerService.AddCustomer(CreateCustomerFromForm());
 
-                customers = customerService.GetAllCustomers().ToList();
-                PopulateCustomerListBox();
+                LoadCustomers();
                 ClearForm();
+                UpdatePanel1.Update();
             }
         }
 
@@ -137,9 +153,9 @@ namespace assessment_platform_developer
                 Email = CustomerEmail.Text,
                 Phone = CustomerPhone.Text,
                 City = CustomerCity.Text,
-                State = StateDropDownList.SelectedValue,
+                State = StateDropDownList.SelectedItem.Text,
                 Zip = CustomerZip.Text,
-                Country = CountryDropDownList.SelectedValue,
+                Country = CountryDropDownList.SelectedItem.Text,
                 Notes = CustomerNotes.Text,
                 ContactName = ContactName.Text,
                 ContactPhone = ContactPhone.Text,
@@ -154,9 +170,9 @@ namespace assessment_platform_developer
             customer.Email = CustomerEmail.Text;
             customer.Phone = CustomerPhone.Text;
             customer.City = CustomerCity.Text;
-            customer.State = StateDropDownList.SelectedValue;
+            customer.State = StateDropDownList.SelectedItem.Text;
             customer.Zip = CustomerZip.Text;
-            customer.Country = CountryDropDownList.SelectedValue;
+            customer.Country = CountryDropDownList.SelectedItem.Text;
             customer.Notes = CustomerNotes.Text;
             customer.ContactName = ContactName.Text;
             customer.ContactPhone = ContactPhone.Text;
@@ -170,9 +186,9 @@ namespace assessment_platform_developer
             CustomerEmail.Text = customer.Email;
             CustomerPhone.Text = customer.Phone;
             CustomerCity.Text = customer.City;
-            StateDropDownList.SelectedValue = customer.State;
+            StateDropDownList.SelectedValue = ((int)Enum.Parse(typeof(CanadianProvinces), customer.State)).ToString();
             CustomerZip.Text = customer.Zip;
-            CountryDropDownList.SelectedValue = customer.Country;
+            CountryDropDownList.SelectedValue = ((int)Enum.Parse(typeof(Countries), customer.Country)).ToString();
             CustomerNotes.Text = customer.Notes;
             ContactName.Text = customer.ContactName;
             ContactPhone.Text = customer.ContactPhone;

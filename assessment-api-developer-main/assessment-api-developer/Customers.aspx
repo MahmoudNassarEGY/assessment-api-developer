@@ -58,11 +58,17 @@
 	</nav>
 
 	<div>
+				<asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional">
+<ContentTemplate>
 		<div class="container body-content">
 			<h2>Customer Registry</h2>
 			<!-- Added AutoPostBack to update customer selection dynamically -->
-			<asp:DropDownList runat="server" ID="CustomersDDL" CssClass="form-control" AutoPostBack="True" OnSelectedIndexChanged="CustomersDDL_SelectedIndexChanged" />
-		</div>
+			
+        <asp:DropDownList runat="server" ID="CustomersDDL" CssClass="form-control" AutoPostBack="True" 
+            OnSelectedIndexChanged="CustomersDDL_SelectedIndexChanged" />
+        <asp:Timer ID="RefreshTimer" runat="server" Interval="5000" OnTick="RefreshTimer_Tick" />
+   
+			</div>
 
 		<div class="container body-content">
 			<div class="card">
@@ -195,6 +201,8 @@
 				</div>
 			</div>
 		</div>
+	    </ContentTemplate>
+</asp:UpdatePanel>
 	</div>
 </form>
 </body>
