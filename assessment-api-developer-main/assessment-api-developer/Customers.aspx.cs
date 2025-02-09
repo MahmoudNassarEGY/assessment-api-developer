@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
+using System.Reflection;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -186,7 +188,9 @@ namespace assessment_platform_developer
             CustomerEmail.Text = customer.Email;
             CustomerPhone.Text = customer.Phone;
             CustomerCity.Text = customer.City;
-            StateDropDownList.SelectedValue = ((int)Enum.Parse(typeof(CanadianProvinces), customer.State)).ToString();
+            StateDropDownList.SelectedValue = customer.Country.ToLower() == "unitedstates" ?
+                ((int)Enum.Parse(typeof(USStates), customer.State)).ToString() :
+                ((int)Enum.Parse(typeof(CanadianProvinces), customer.State)).ToString();
             CustomerZip.Text = customer.Zip;
             CountryDropDownList.SelectedValue = ((int)Enum.Parse(typeof(Countries), customer.Country)).ToString();
             CustomerNotes.Text = customer.Notes;
@@ -212,7 +216,7 @@ namespace assessment_platform_developer
             ContactEmail.Text = string.Empty;
         }
 
-        private void PopulateCustomerDropDownLists()
+        private void PopulateCustomerDropDownLists(string country="")
         {
 
             var countryList = Enum.GetValues(typeof(Countries))
@@ -225,21 +229,36 @@ namespace assessment_platform_developer
                 .ToArray();
 
             CountryDropDownList.Items.AddRange(countryList);
-            CountryDropDownList.SelectedValue = ((int)Countries.Canada).ToString();
+            CountryDropDownList.SelectedValue =country.ToLower()=="unitedstates"? ((int)Countries.UnitedStates).ToString()
+                : ((int)Countries.Canada).ToString();
 
 
-            var provinceList = Enum.GetValues(typeof(CanadianProvinces))
+            var provinceList = country.ToLower() == "unitedstates" ? Enum.GetValues(typeof(USStates))
+                .Cast<USStates>()
+                .Select(p => new ListItem
+                {
+                    Text = GetEnumDescription(p),
+                    Value = ((int)p).ToString()
+                })
+                .ToArray(): Enum.GetValues(typeof(CanadianProvinces))
                 .Cast<CanadianProvinces>()
                 .Select(p => new ListItem
                 {
-                    Text = p.ToString(),
+                    Text = GetEnumDescription(p),
                     Value = ((int)p).ToString()
                 })
-                .ToArray();
+                .ToArray()
+                ;
 
             StateDropDownList.Items.Add(new ListItem(""));
             StateDropDownList.Items.AddRange(provinceList);
         }
+
+        //private string GetEnumDescription(CanadianProvinces p)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
         // Validates postal/zip code based on selected country using the validator function
         protected void cvCustomerZip_ServerValidate(object source, ServerValidateEventArgs args)
         {
@@ -249,5 +268,27 @@ namespace assessment_platform_developer
             var validator = new ZipCodeValidator();
             args.IsValid = validator.IsValid(zip, country);
         }
+        protected void CountryDropDownList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedCountry = CountryDropDownList.SelectedItem.Text;
+          
+                StateDropDownList.Items.Clear();
+            CountryDropDownList.Items.Clear();
+                PopulateCustomerDropDownLists(selectedCountry);
+            
+
+        }
+       
+            public static string GetEnumDescription<T>(T enumValue) where T : Enum
+            {
+                FieldInfo fi = enumValue.GetType().GetField(enumValue.ToString());
+                DescriptionAttribute[] attributes =
+                    (DescriptionAttribute[])fi.GetCustomAttributes(typeof(DescriptionAttribute), false);
+
+                return (attributes.Length > 0) ? attributes[0].Description : enumValue.ToString();
+            }
+    
+
     }
-}
+   }
+

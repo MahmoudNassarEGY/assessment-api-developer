@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CustomerForm.aspx.cs" Inherits="assessment_platform_developer.Customers" %>
+﻿﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CustomerForm.aspx.cs" Inherits="assessment_platform_developer.Customers" %>
 
 <!DOCTYPE html>
 
@@ -150,7 +150,7 @@
 			
 				<div class="form-group">
 					<asp:Label ID="CustomerCountryLabel" runat="server" Text="Country" CssClass="form-label"></asp:Label>
-					<asp:DropDownList ID="CountryDropDownList" runat="server" CssClass="form-control" AutoPostBack="false"/>
+					<asp:DropDownList ID="CountryDropDownList" runat="server" OnSelectedIndexChanged="CountryDropDownList_SelectedIndexChanged" CssClass="form-control" AutoPostBack="true"/>
 					<asp:RequiredFieldValidator ID="revCustomerCountry" runat="server" ControlToValidate="CountryDropDownList"
 							ErrorMessage="Country is required." CssClass="text-danger" Display="Dynamic" />
 				</div>
