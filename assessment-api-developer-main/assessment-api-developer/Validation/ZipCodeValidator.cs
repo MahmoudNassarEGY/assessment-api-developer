@@ -12,13 +12,14 @@ namespace assessment_platform_developer.Validation
     {
         public bool IsValid(string zip, string country)
         {
+            
             if (string.IsNullOrEmpty(zip)) return false;
-
-            if (country == "United States")
+         
+            if (country.Equals("UnitedStates", StringComparison.OrdinalIgnoreCase))
                 return Regex.IsMatch(zip, @"^\d{5}(-\d{4})?$");
 
-            if (country == "Canada")
-                return Regex.IsMatch(zip, @"^[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d$");
+            if (country.Equals("Canada", StringComparison.OrdinalIgnoreCase))
+                return Regex.IsMatch(zip, @"^[A-Za-z]\d[A-Za-z][ ]?\d[A-Za-z]\d$");
 
             return false; // Invalid if country is not US or Canada
         }

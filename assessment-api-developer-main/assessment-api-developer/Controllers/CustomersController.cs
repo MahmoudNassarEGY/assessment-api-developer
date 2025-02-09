@@ -7,6 +7,8 @@ using System.Net;
 using System.Web.Http;
 using Swashbuckle.Swagger.Annotations;
 using assessment_platform_developer.DTO;
+using System.Web.UI.WebControls.WebParts;
+using System.Web;
 
 namespace assessment_platform_developer.Controllers
 {
@@ -28,6 +30,11 @@ namespace assessment_platform_developer.Controllers
         [SwaggerResponse(HttpStatusCode.BadRequest, Description = "Invalid request data")]
         public IHttpActionResult Create([FromBody] CustomerDTO customerDTO)
         {
+
+            if(!IsCountryValid(customerDTO.Country))
+                return BadRequest("Invalid country.");
+            if (!IsSateValid(customerDTO.Country, customerDTO.State))
+                return BadRequest("Invalid state.");
             var customer = new Customer
             {
                 // Using DTO to exclude Id from update operation and for better SOLID adherance
@@ -61,6 +68,17 @@ namespace assessment_platform_developer.Controllers
 
             // Return absolute URL for the created customer
             return Created(new Uri(Request.RequestUri, createdCustomer.ID.ToString()), createdCustomer);
+        }
+
+        private bool IsCountryValid(string country)
+        {
+           CountryValidator validator = new CountryValidator();
+            return validator.IsCountryValid(country);
+        }
+        private bool IsSateValid(string country,string state)
+        {
+            StateValidator validator = new StateValidator();
+            return validator.IsSateValid(country,state);
         }
 
 
