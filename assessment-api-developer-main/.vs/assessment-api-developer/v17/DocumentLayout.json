@@ -1,0 +1,311 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BB0C76FD-DE18-4332-A0E8-EC9399D928E0}|assessment-api-developer\\assessment-api-developer.csproj|c:\\users\\user\\downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{BB0C76FD-DE18-4332-A0E8-EC9399D928E0}|assessment-api-developer\\assessment-api-developer.csproj|solutionrelative:assessment-api-developer\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB0C76FD-DE18-4332-A0E8-EC9399D928E0}|assessment-api-developer\\assessment-api-developer.csproj|c:\\users\\user\\downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\customers.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{BB0C76FD-DE18-4332-A0E8-EC9399D928E0}|assessment-api-developer\\assessment-api-developer.csproj|solutionrelative:assessment-api-developer\\customers.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0028240-87DC-4B8E-8DFE-9294D31F07E3}|assessment-api-developer.Tests\\assessment-api-developer.Tests.csproj|C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer.tests\\customertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0028240-87DC-4B8E-8DFE-9294D31F07E3}|assessment-api-developer.Tests\\assessment-api-developer.Tests.csproj|solutionrelative:assessment-api-developer.tests\\customertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB0C76FD-DE18-4332-A0E8-EC9399D928E0}|assessment-api-developer\\assessment-api-developer.csproj|C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB0C76FD-DE18-4332-A0E8-EC9399D928E0}|assessment-api-developer\\assessment-api-developer.csproj|solutionrelative:assessment-api-developer\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB0C76FD-DE18-4332-A0E8-EC9399D928E0}|assessment-api-developer\\assessment-api-developer.csproj|C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\validation\\countryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB0C76FD-DE18-4332-A0E8-EC9399D928E0}|assessment-api-developer\\assessment-api-developer.csproj|solutionrelative:assessment-api-developer\\validation\\countryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB0C76FD-DE18-4332-A0E8-EC9399D928E0}|assessment-api-developer\\assessment-api-developer.csproj|C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\validation\\statevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB0C76FD-DE18-4332-A0E8-EC9399D928E0}|assessment-api-developer\\assessment-api-developer.csproj|solutionrelative:assessment-api-developer\\validation\\statevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB0C76FD-DE18-4332-A0E8-EC9399D928E0}|assessment-api-developer\\assessment-api-developer.csproj|C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\Validation\\ZipCodeValidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB0C76FD-DE18-4332-A0E8-EC9399D928E0}|assessment-api-developer\\assessment-api-developer.csproj|solutionrelative:assessment-api-developer\\Validation\\ZipCodeValidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB0C76FD-DE18-4332-A0E8-EC9399D928E0}|assessment-api-developer\\assessment-api-developer.csproj|C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\site.mobile.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{BB0C76FD-DE18-4332-A0E8-EC9399D928E0}|assessment-api-developer\\assessment-api-developer.csproj|solutionrelative:assessment-api-developer\\site.mobile.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB0C76FD-DE18-4332-A0E8-EC9399D928E0}|assessment-api-developer\\assessment-api-developer.csproj|C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\app_start\\swaggerconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB0C76FD-DE18-4332-A0E8-EC9399D928E0}|assessment-api-developer\\assessment-api-developer.csproj|solutionrelative:assessment-api-developer\\app_start\\swaggerconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB0C76FD-DE18-4332-A0E8-EC9399D928E0}|assessment-api-developer\\assessment-api-developer.csproj|C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB0C76FD-DE18-4332-A0E8-EC9399D928E0}|assessment-api-developer\\assessment-api-developer.csproj|solutionrelative:assessment-api-developer\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB0C76FD-DE18-4332-A0E8-EC9399D928E0}|assessment-api-developer\\assessment-api-developer.csproj|C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\customers.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB0C76FD-DE18-4332-A0E8-EC9399D928E0}|assessment-api-developer\\assessment-api-developer.csproj|solutionrelative:assessment-api-developer\\customers.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB0C76FD-DE18-4332-A0E8-EC9399D928E0}|assessment-api-developer\\assessment-api-developer.csproj|C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\repositories\\customersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB0C76FD-DE18-4332-A0E8-EC9399D928E0}|assessment-api-developer\\assessment-api-developer.csproj|solutionrelative:assessment-api-developer\\repositories\\customersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB0C76FD-DE18-4332-A0E8-EC9399D928E0}|assessment-api-developer\\assessment-api-developer.csproj|C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\DTO\\CustomerDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB0C76FD-DE18-4332-A0E8-EC9399D928E0}|assessment-api-developer\\assessment-api-developer.csproj|solutionrelative:assessment-api-developer\\DTO\\CustomerDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB0C76FD-DE18-4332-A0E8-EC9399D928E0}|assessment-api-developer\\assessment-api-developer.csproj|C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\customers.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB0C76FD-DE18-4332-A0E8-EC9399D928E0}|assessment-api-developer\\assessment-api-developer.csproj|solutionrelative:assessment-api-developer\\customers.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB0C76FD-DE18-4332-A0E8-EC9399D928E0}|assessment-api-developer\\assessment-api-developer.csproj|C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\Repositories\\ICustomerRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB0C76FD-DE18-4332-A0E8-EC9399D928E0}|assessment-api-developer\\assessment-api-developer.csproj|solutionrelative:assessment-api-developer\\Repositories\\ICustomerRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB0C76FD-DE18-4332-A0E8-EC9399D928E0}|assessment-api-developer\\assessment-api-developer.csproj|C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB0C76FD-DE18-4332-A0E8-EC9399D928E0}|assessment-api-developer\\assessment-api-developer.csproj|solutionrelative:assessment-api-developer\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB0C76FD-DE18-4332-A0E8-EC9399D928E0}|assessment-api-developer\\assessment-api-developer.csproj|C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB0C76FD-DE18-4332-A0E8-EC9399D928E0}|assessment-api-developer\\assessment-api-developer.csproj|solutionrelative:assessment-api-developer\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB0C76FD-DE18-4332-A0E8-EC9399D928E0}|assessment-api-developer\\assessment-api-developer.csproj|C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\App_Start\\WebApiConfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB0C76FD-DE18-4332-A0E8-EC9399D928E0}|assessment-api-developer\\assessment-api-developer.csproj|solutionrelative:assessment-api-developer\\App_Start\\WebApiConfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\packages.config",
+              "RelativeDocumentMoniker": "assessment-api-developer\\packages.config",
+              "ToolTip": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\packages.config",
+              "RelativeToolTip": "assessment-api-developer\\packages.config",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-02-09T23:33:45.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Site.Mobile.Master",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\Site.Mobile.Master",
+              "RelativeDocumentMoniker": "assessment-api-developer\\Site.Mobile.Master",
+              "ToolTip": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\Site.Mobile.Master",
+              "RelativeToolTip": "assessment-api-developer\\Site.Mobile.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-02-09T20:15:35.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StateValidator.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\Validation\\StateValidator.cs",
+              "RelativeDocumentMoniker": "assessment-api-developer\\Validation\\StateValidator.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\Validation\\StateValidator.cs",
+              "RelativeToolTip": "assessment-api-developer\\Validation\\StateValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T18:25:45.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CountryValidator.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\Validation\\CountryValidator.cs",
+              "RelativeDocumentMoniker": "assessment-api-developer\\Validation\\CountryValidator.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\Validation\\CountryValidator.cs",
+              "RelativeToolTip": "assessment-api-developer\\Validation\\CountryValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T18:17:43.645Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CustomersController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\Controllers\\CustomersController.cs",
+              "RelativeDocumentMoniker": "assessment-api-developer\\Controllers\\CustomersController.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\Controllers\\CustomersController.cs",
+              "RelativeToolTip": "assessment-api-developer\\Controllers\\CustomersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T16:16:19.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BundleConfig.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\App_Start\\BundleConfig.cs",
+              "RelativeDocumentMoniker": "assessment-api-developer\\App_Start\\BundleConfig.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\App_Start\\BundleConfig.cs",
+              "RelativeToolTip": "assessment-api-developer\\App_Start\\BundleConfig.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T15:59:38.323Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SwaggerConfig.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\App_Start\\SwaggerConfig.cs",
+              "RelativeDocumentMoniker": "assessment-api-developer\\App_Start\\SwaggerConfig.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\App_Start\\SwaggerConfig.cs",
+              "RelativeToolTip": "assessment-api-developer\\App_Start\\SwaggerConfig.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAQwAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T01:59:47.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CustomerDTO.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\DTO\\CustomerDTO.cs",
+              "RelativeDocumentMoniker": "assessment-api-developer\\DTO\\CustomerDTO.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\DTO\\CustomerDTO.cs",
+              "RelativeToolTip": "assessment-api-developer\\DTO\\CustomerDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T21:46:35.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ICustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\Repositories\\ICustomerRepository.cs",
+              "RelativeDocumentMoniker": "assessment-api-developer\\Repositories\\ICustomerRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\Repositories\\ICustomerRepository.cs",
+              "RelativeToolTip": "assessment-api-developer\\Repositories\\ICustomerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T01:22:40.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\Global.asax.cs",
+              "RelativeDocumentMoniker": "assessment-api-developer\\Global.asax.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\Global.asax.cs",
+              "RelativeToolTip": "assessment-api-developer\\Global.asax.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAAAG4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T23:42:58.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomerTests.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer.Tests\\CustomerTests.cs",
+              "RelativeDocumentMoniker": "assessment-api-developer.Tests\\CustomerTests.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer.Tests\\CustomerTests.cs",
+              "RelativeToolTip": "assessment-api-developer.Tests\\CustomerTests.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAD4v3QAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T22:30:15.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "WebApiConfig.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\App_Start\\WebApiConfig.cs",
+              "RelativeDocumentMoniker": "assessment-api-developer\\App_Start\\WebApiConfig.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\App_Start\\WebApiConfig.cs",
+              "RelativeToolTip": "assessment-api-developer\\App_Start\\WebApiConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T22:16:58.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Customers.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\Customers.aspx.designer.cs",
+              "RelativeDocumentMoniker": "assessment-api-developer\\Customers.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\Customers.aspx.designer.cs",
+              "RelativeToolTip": "assessment-api-developer\\Customers.aspx.designer.cs",
+              "ViewState": "AgIAAJABAAAAAAAAAAAUwJMBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T22:13:01.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Customers.aspx",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\Customers.aspx",
+              "RelativeDocumentMoniker": "assessment-api-developer\\Customers.aspx",
+              "ToolTip": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\Customers.aspx",
+              "RelativeToolTip": "assessment-api-developer\\Customers.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-02-07T19:54:41.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ZipCodeValidator.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\Validation\\ZipCodeValidator.cs",
+              "RelativeDocumentMoniker": "assessment-api-developer\\Validation\\ZipCodeValidator.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\Validation\\ZipCodeValidator.cs",
+              "RelativeToolTip": "assessment-api-developer\\Validation\\ZipCodeValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T00:06:18.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "assessment-api-developer\\Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\Models\\Customer.cs",
+              "RelativeToolTip": "assessment-api-developer\\Models\\Customer.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAawBkAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T05:25:08.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CustomersRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\Repositories\\CustomersRepository.cs",
+              "RelativeDocumentMoniker": "assessment-api-developer\\Repositories\\CustomersRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\Repositories\\CustomersRepository.cs",
+              "RelativeToolTip": "assessment-api-developer\\Repositories\\CustomersRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T22:08:35.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Customers.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\Customers.aspx.cs",
+              "RelativeDocumentMoniker": "assessment-api-developer\\Customers.aspx.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\assessment-api-developer-main\\assessment-api-developer-main\\assessment-api-developer\\Customers.aspx.cs",
+              "RelativeToolTip": "assessment-api-developer\\Customers.aspx.cs",
+              "ViewState": "AgIAALcAAAAAAAAAAAAYwL4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T23:59:00.038Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

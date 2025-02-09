@@ -6208,6 +6208,23 @@
             or bigger than one-instance-per-object-graph. In other words, a call to GetInstance() will never create
             more than one instance of such registered type.
             </summary>
+            <remarks>Initializes a new instance of the <see cref="T:SimpleInjector.ScopedLifestyle"/> class.</remarks>
+            <param name="name">The user friendly name of this lifestyle.</param>
+            <exception cref="T:System.ArgumentException">Thrown when <paramref name="name"/> is null or an empty string.
+            </exception>
+        </member>
+        <member name="M:SimpleInjector.ScopedLifestyle.#ctor(System.String)">
+            <summary>
+            Base class for scoped lifestyles. A scoped lifestyle caches instances for the duration of an implicitly
+            or explicitly defined scope. Such scope can be an (implicitly defined) web request or an explicitly
+            defined Lifetime Scope. The lifetime of instances registered with a scoped lifestyle is always equal
+            or bigger than one-instance-per-object-graph. In other words, a call to GetInstance() will never create
+            more than one instance of such registered type.
+            </summary>
+            <remarks>Initializes a new instance of the <see cref="T:SimpleInjector.ScopedLifestyle"/> class.</remarks>
+            <param name="name">The user friendly name of this lifestyle.</param>
+            <exception cref="T:System.ArgumentException">Thrown when <paramref name="name"/> is null or an empty string.
+            </exception>
         </member>
         <member name="F:SimpleInjector.ScopedLifestyle.Flowing">
             <summary>
@@ -6216,12 +6233,6 @@
             scopes to be active and overlap within the same logical context, such as a single thread, or an
             asynchronous context.
             </summary>
-        </member>
-        <member name="M:SimpleInjector.ScopedLifestyle.#ctor(System.String)">
-            <summary>Initializes a new instance of the <see cref="T:SimpleInjector.ScopedLifestyle"/> class.</summary>
-            <param name="name">The user friendly name of this lifestyle.</param>
-            <exception cref="T:System.ArgumentException">Thrown when <paramref name="name"/> is null or an empty string.
-            </exception>
         </member>
         <member name="P:SimpleInjector.ScopedLifestyle.Length">
             <inheritdoc />
