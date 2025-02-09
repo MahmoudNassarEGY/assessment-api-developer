@@ -17,6 +17,8 @@ namespace assessment_platform_developer.Tests
         private CustomerService customerService;
         private CustomerRepository customerRepository;
         private ZipCodeValidator zipCodeValidator;
+        private StateValidator stateValidator;
+        private CountryValidator countryValidator;
 
         [TestInitialize]
         public void Setup()
@@ -25,9 +27,11 @@ namespace assessment_platform_developer.Tests
             customerService = new CustomerService(mockRepo.Object);
             customerRepository = new CustomerRepository(new CustomerDataStore());
             zipCodeValidator = new ZipCodeValidator();
+            stateValidator = new StateValidator();
+            countryValidator = new CountryValidator();
         }
 
-        //  CustomerService Tests
+        // CustomerService Tests
         [TestMethod]
         public void GetAllCustomers_ReturnsCustomers()
         {
@@ -90,20 +94,18 @@ namespace assessment_platform_developer.Tests
             Assert.AreEqual(0, result.Count);
         }
 
-        // ZipCodevalidator Tests
+        // ZipCodeValidator Tests
         [TestMethod]
         public void ValidUSZipCode_ReturnsTrue()
         {
-            var result = zipCodeValidator.IsValid("12345", "United States");
-
+            var result = zipCodeValidator.IsValid("12345", "UnitedStates"); // Updated test case
             Assert.IsTrue(result);
         }
 
         [TestMethod]
         public void InvalidUSZipCode_ReturnsFalse()
         {
-            var result = zipCodeValidator.IsValid("ABCDE", "United States");
-
+            var result = zipCodeValidator.IsValid("ABCDE", "UnitedStates"); // Updated test case
             Assert.IsFalse(result);
         }
 
@@ -111,7 +113,6 @@ namespace assessment_platform_developer.Tests
         public void ValidCanadianPostalCode_ReturnsTrue()
         {
             var result = zipCodeValidator.IsValid("K1A 0B1", "Canada");
-
             Assert.IsTrue(result);
         }
 
@@ -119,9 +120,51 @@ namespace assessment_platform_developer.Tests
         public void InvalidCanadianPostalCode_ReturnsFalse()
         {
             var result = zipCodeValidator.IsValid("123 456", "Canada");
+            Assert.IsFalse(result);
+        }
 
+        // StateValidator Tests
+        [TestMethod]
+        public void ValidUSState_ReturnsTrue()
+        {
+            var result = stateValidator.IsSateValid("UnitedStates", "California");
+            Assert.IsTrue(result);
+        }
+
+        [TestMethod]
+        public void InvalidUSState_ReturnsFalse()
+        {
+            var result = stateValidator.IsSateValid("UnitedStates", "Atlantis");
+            Assert.IsFalse(result);
+        }
+
+        [TestMethod]
+        public void ValidCanadianProvince_ReturnsTrue()
+        {
+            var result = stateValidator.IsSateValid("Canada", "Ontario");
+            Assert.IsTrue(result);
+        }
+
+        [TestMethod]
+        public void InvalidCanadianProvince_ReturnsFalse()
+        {
+            var result = stateValidator.IsSateValid("Canada", "Gotham");
+            Assert.IsFalse(result);
+        }
+
+        // CountryValidator Tests
+        [TestMethod]
+        public void ValidCountry_ReturnsTrue()
+        {
+            var result = countryValidator.IsCountryValid("Canada");
+            Assert.IsTrue(result);
+        }
+
+        [TestMethod]
+        public void InvalidCountry_ReturnsFalse()
+        {
+            var result = countryValidator.IsCountryValid("Neverland");
             Assert.IsFalse(result);
         }
     }
 }
-
