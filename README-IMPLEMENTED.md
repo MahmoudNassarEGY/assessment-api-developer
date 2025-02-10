@@ -74,3 +74,8 @@ dotnet test
 - The project **currently uses an in-memory list** for storing customer data.
 - It is **designed to allow switching to a database** (SQL Server, PostgreSQL, etc.) by simply replacing the repository implementation.
 - This approach keeps the API functional without requiring a database setup but ensures an easy migration path when needed.
+
+
+If there were more time for the assessment or in a real-world example, I would definitely work on adding regex-based validators to all customer fields.
+
+
